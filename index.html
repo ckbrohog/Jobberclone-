@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Client Tracker</h1>
+
+    <div class="form-container">
+      <h2>Add New Client</h2>
+      <form id="client-form">
+        <input type="text" id="name" placeholder="Client Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="tel" id="phone" placeholder="Phone Number" />
+        <textarea id="notes" placeholder="Notes / Job History"></textarea>
+        <input type="text" id="cardToken" placeholder="Card Token (e.g. Stripe PM ID)" />
+        <button type="submit">Save Client</button>
+      </form>
+    </div>
+
+    <div class="list-container">
+      <h2>Saved Clients</h2>
+      <div id="client-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
